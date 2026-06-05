@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noir Café</title>
+    <title>Dolce Aroma</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+
     <style>
       * {
         margin: 0;
@@ -308,7 +309,71 @@
         letter-spacing: 3px;
         color: #333;
         text-transform: uppercase;
-      }
+      }@media (max-width: 768px) {
+  nav {
+    padding: 20px 30px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-imagen {
+    display: none;
+  }
+
+  .hero-texto {
+    padding: 0 30px;
+  }
+
+  .hero-texto h2 {
+    font-size: 50px;
+  }
+
+  .frase h2 {
+    font-size: 32px;
+  }
+
+  .menu {
+    padding: 80px 30px;
+  }
+
+  .item {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 0 30px 80px;
+  }
+
+  .galeria img:first-child {
+    grid-row: auto;
+  }
+
+  .contacto {
+    grid-template-columns: 1fr;
+    padding: 80px 30px;
+  }
+
+  .mapa {
+    height: 250px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    text-align: center;
+  }
+}
     </style>
   </head>
   <body>
@@ -317,7 +382,7 @@
     <div class="cursor-ring" id="cursorRing"></div>
 
     <nav>
-      <h1>NOIR</h1>
+      <h1>Dolce Aroma</h1>
       <ul>
         <li><a href="#menu">Menú</a></li>
         <li><a href="#galeria">Galería</a></li>
@@ -393,7 +458,7 @@
     </div>
 
     <footer>
-      <span>© 2026 Noir Café</span>
+      <span>© 2026 Dolce Aroma Café</span>
       <span>Lima, Perú</span>
       <span>Todos los derechos reservados</span>
     </footer>
