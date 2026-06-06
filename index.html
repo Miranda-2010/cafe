@@ -381,14 +381,14 @@
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
 
-    <nav>
-      <h1>Dolce Aroma</h1>
-      <ul>
-        <li><a href="#menu">Menú</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+<nav>
+  <h1>Dolce Aroma</h1>
+  <ul>
+    <li><a href="#menu" onclick="scrollSuave(event, '#menu')">Menú</a></li>
+    <li><a href="#galeria" onclick="scrollSuave(event, '#galeria')">Galería</a></li>
+    <li><a href="#contacto" onclick="scrollSuave(event, '#contacto')">Contacto</a></li>
+  </ul>
+</nav>
 
     <div class="hero">
       <div class="hero-texto">
@@ -464,6 +464,13 @@
     </footer>
 
     <script>
+      function scrollSuave(e, destino) {
+  e.preventDefault()
+  document.querySelector(destino).scrollIntoView({ 
+    behavior: 'smooth',
+    block: 'start'
+  })
+}
       // Cursor personalizado
       var cursor = document.getElementById("cursor")
       var ring = document.getElementById("cursorRing")
